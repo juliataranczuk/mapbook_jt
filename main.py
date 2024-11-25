@@ -6,6 +6,9 @@ users:list=[
     {'name':'Patryk', 'posts':9, 'city':'Kielce'},
 
 ]
+#TODO please update user list
+
+
 
 print(f'Witaj {users[0]["name"]}!!')
 for user in users[1:]:
