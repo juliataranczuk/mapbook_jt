@@ -1,6 +1,4 @@
 
-
-
 def hello(user:str):
     print(f'Witaj {user}!!')
 
