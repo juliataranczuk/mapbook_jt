@@ -1,5 +1,7 @@
 from mapbook.users import users
+
 from mapbook.crud import hello,read_users, remove_user, update_user
+
 
 
 def main():
@@ -11,6 +13,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
