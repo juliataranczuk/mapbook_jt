@@ -26,4 +26,4 @@ def update_user(userlist:list)->None:
             user['name'] = new_name
             user['posts'] = new_posts
             user['city']=new_city
-            update_user(users)
+
