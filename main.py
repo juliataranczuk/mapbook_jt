@@ -1,22 +1,22 @@
+from mapbook.map_functions import single_user_map,multi_user_map
 from mapbook.users import users
-
-from mapbook.crud import hello,read_users, remove_user, update_user
-
+from mapbook.crud import hello, read_users, add_user, remove_user, update_user
 
 
 def main():
     hello(users[0]['name'])
     while True:
-        print('=======MENU=======')
+        print('======MENU======')
         print('0. Wyjście z programu')
         print('1. Dodaj znajomego')
         print('2. Wczytaj znajomych')
         print('3. Aktualizuj znajomego')
         print('4. Usuń znajomego')
-        print('5. Generuj mapę z lokalizacją znajomego')
-        print('6. Generuj mapę z lokalizacją wszystkich znajomych')
-        menu_option: str = input('użytkowniku, wybierz opcję menu:')
-        print(f'użytkownik wybrał {menu_option}')
+        print('5. Generuj mapę z lokalizacja znajomego')
+        print('6. Generuj mapę z lokalizacja wszystkich znajomych')
+
+        menu_option: str = input("Użytkowniku wybierz opcje menu: ")
+        print(f'Użytkownik wybrał {menu_option}')
         if menu_option == '0':
             break
         if menu_option == '1':
@@ -28,10 +28,10 @@ def main():
         if menu_option == '4':
             remove_user(users)
         if menu_option == '5':
-            pass
+            single_user_map(users)
         if menu_option == '6':
-            pass
+            multi_user_map(users)
+
 
 if __name__ == '__main__':
     main()
-

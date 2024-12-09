@@ -9,7 +9,7 @@ users:list=[
     {'name':'Karolina', 'posts':12, 'city':'Warszawa'},
     {'name':'Amelia', 'posts':2, 'city':'Toruń'},
     {'name':'Kinga', 'posts':6, 'city':'Iława'},
-    {'name':'Dominik', 'posts':8, 'city':'Sielce'},
+    {'name':'Dominik', 'posts':8, 'city':'Sielce_(województwo_lubelskie)'},
     {'name':'Michał', 'posts':15, 'city':'Kluczbork'},
     {'name':'Żerom', 'posts':55, 'city':'Warszawa'},
     {'name':'Kinga', 'posts':66, 'city':'Iława'},
