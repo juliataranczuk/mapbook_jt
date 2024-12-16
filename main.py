@@ -3,6 +3,34 @@ import tkintermapview
 
 
 
+
+class User:
+    def __init__(self, imie, nazwisko, posts, lokalizacja):
+        self.imie = imie
+        self.nazwisko = nazwisko
+        self.posts = posts
+        self.lokalizacja = lokalizacja
+
+
+users = [
+    User('aaa', 'aa', '1','aaa'),
+    User('bb', 'bb', '1','bb'),
+    User('cc', 'cc', '1','cc')
+
+]
+
+
+
+def show_users(listbox_lista_obiektow):
+    for idx, user in enumerate(users):
+        listbox_lista_obiektow.insert(idx, user.imie)
+
+
+
+
+
+
+
 def main():
     root=Tk()
     root.geometry("800x600")
@@ -98,9 +126,6 @@ def main():
     map_widget.grid(row=3, column=0, columnspan=8)
 
 
-
+    show_users()
 
     root.mainloop()
-
-if __name__ == '__main__':
-    main()
