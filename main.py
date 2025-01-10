@@ -32,7 +32,7 @@ class User:
         ]
 
 
- users = [
+users = [
 #     User('Kasia','Kowalska','7','Warszawa'),
 #     User('Adam','Nowak','2','Wrocław'),
 #
